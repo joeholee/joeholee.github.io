@@ -1,0 +1,33 @@
+---
+title: "[CA] Module 2 - Lecture 6"
+excerpt: "컴퓨터 아키텍쳐 6주차"
+
+categories:
+  - CS
+
+author_profile: true
+sidebar:
+  nav: "main"
+
+toc: true
+toc_sticky: true
+
+date: 2022-05-06
+last_modified_at: 2022-05-06
+---
+
+# 1. Control Hazard
+
+✓ 마지막 Hazard (Structural, Data, **Control**)
+
+## Control Hazards
+
+> instruction address의 흐름이 *flow instructions*으로 인해 순차적(sequential; PC=PC+4)으로 흘러가지 않을 때 발생하는 문제
+> 
+- *Conditional branches* (beq, bne)
+- *Unconditional branches* (j, jal, jr)
+- *Exceptions*
+
+# 2. Branch Prediction
+
+<br>
