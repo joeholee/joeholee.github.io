@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-05-09
-last_modified_at: 2022-05-11
+last_modified_at: 2022-05-15
 ---
 
 # 1. Memory Hierarchy
@@ -27,6 +27,12 @@ last_modified_at: 2022-05-11
 Bandwidth(주어진 시간에 필요한 Memory access)
 
 →Bandwidth가 넓고(주어진 시간에 필요한 Memory access가 적고) latency는 작아야 함.
+
+Moore’s Law에 따라 cpu의 성능은 매년 60%정도 향상
+
+DRAM의 성능은 매년 7%정도의 향상
+
+→해당 간극은 점점 더 넓어짐
 
 # 2. Direct Mapped Caches
 
