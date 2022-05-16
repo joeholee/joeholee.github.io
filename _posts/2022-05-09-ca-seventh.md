@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-05-09
-last_modified_at: 2022-05-15
+last_modified_at: 2022-05-16
 ---
 
 # 1. Memory Hierarchy
