@@ -34,6 +34,30 @@ DRAM의 성능은 매년 7%정도의 향상
 
 →해당 간극은 점점 더 넓어짐
 
+데이터 접근은 무엇에 접근하냐에 따라 어마어마한 시간 차이가 날 수 있음
+
+Physics: 용량이 큰 것이 느린 이유는 물리적인 영향이 크다.
+
+Capacitance: CPU칩을 벗어 나는 순간 capacitance(전기용량) 몇개 이상의 차이가 남.
+
+따라서 칩 안에서 작업 하는 것이 훨신 빠름.
+
+다양한 메모리 레벨이 서로 다른 크기, 속도로 구성되어 있음.
+
+locality를 이용해서 CPU가 매우 크고 빠른 메모리인것 처럼 착각하게 만드는 것
+
+CPU와의 거리에 따라 속도, 가격 등이 달라짐.
+
+핵심적인 내용 - 위의 그림과 비슷한 문맥임.
+
+CPU: Register, Cache(Level 1)
+
+Level2 Cache
+
+Memory(Main Memory)
+
+Disk
+
 # 2. Direct Mapped Caches
 
 <br>
