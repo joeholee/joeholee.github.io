@@ -58,6 +58,43 @@ Memory(Main Memory)
 
 Disk
 
+가장 이상적인 구조는 가장 큰 메모리를 가장 빠르게 접근하는 것
+
+이를 가능하게 하는 것이 locality임.
+
+Temporal locality(시간적)
+
+- 최근에 access한 것이 빠른 시간 내에 access할 가능성이 높은 것
+- for문, loop문 등
+
+spatial locality(지역적, 공간적)
+
+- 현재 access된 것의 주의에 있는 것이 access될 가능성이 높은 것
+- 위의 코드의 a에 해당
+- instruction들의 access도 해당
+
+temporal locality는 동일한 메모리에 계속 access하는 것
+
+Spatial locality는 주위에 있는 것들을 access하는 것
+
+루프, subroutine, argument, vector, scalar 모두 locality를 찾아볼 수 있음.
+
+최근 access, 근처에 있는 것들이 다시 access될 수 있기 때문에 이들을 Cache로 옮기면
+
+작고 빠른 Cache로 크지만 느린 Memory를 빠르게 사용할 수 있음.
+
+Cache가 가장 중요한 이유는 프로그램 안에서 가장 큰 역할을 차지하기 때문임.
+
+- Cache line을 어디에 둘 것인가?
+- Cache line을 어떻게찾아낼 것인가?
+- Cache line을 어떻게 replacement할 것인가?
+- write를 할 경우 memory와 sink를 어떻게 맞출 것인가?
+
+제한점
+
+- 나노초 단위에서 처리해야 하기 때문에 간단해야 한다.
+- 여러가지 상황 속에서 시뮬레이션을 함.
+
 # 2. Direct Mapped Caches
 
 <br>
