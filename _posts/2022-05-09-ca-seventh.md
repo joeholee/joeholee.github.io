@@ -97,4 +97,10 @@ Cache가 가장 중요한 이유는 프로그램 안에서 가장 큰 역할을 
 
 # 2. Direct Mapped Caches
 
+직접적으로 Mapping이 된다.
+
+그림처럼 memory에 있는 line이 unique한 cache와 매칭
+
+cache의 page라고 생각 한다면 memory에 있는 동일한 크기의 page는 모두 정해진 위치로 mapping
+
 <br>
