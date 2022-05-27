@@ -1,0 +1,33 @@
+---
+title: "[CA] Module 3 - Lecture 10"
+excerpt: "컴퓨터 아키텍쳐 12주차"
+
+categories:
+  - CS
+
+author_profile: true
+sidebar:
+  nav: "main"
+
+toc: true
+toc_sticky: true
+
+date: 2022-05-28
+last_modified_at: 2022-05-28
+---
+
+# 1. Dynamic Scheduling
+
+### 어떻게 CPI(clock per instruction)를 1에 가깝게 성능을 높일 수 있을까?
+
+Dynamic Scheduling을 통해서 실현해보자!
+
+### Dynamic Scheduling을 하는 이유?
+
+1. 컴파일 타임에는 알 수 없는 코드간 의존성을 작동하게 해준다.
+2. 컴파일을 더욱 단순하게 해준다
+3. 다른 머신에서도 잘 돌아가는 코드를 가능하게 해준다.
+
+### 동적스케쥴링의 큰 아이디어 2가지
+
+아래 예시를 보자.
