@@ -13,7 +13,9 @@ toc: true
 toc_sticky: true
 
 date: 2022-05-29
-last_modified_at: 2022-05-29
+last_modified_at: 2022-06-01
 ---
 
 # 1. Register Scoreboarding
+
+# 2. Scoreboard Example
