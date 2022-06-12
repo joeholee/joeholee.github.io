@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-06-11
+last_modified_at: 2022-06-12
 ---
 
 # 1. Superscalar Architecture
@@ -29,3 +29,7 @@ base machine: pipeline만
 superpipelined: 4개를 8개인 것처럼 처리하여 0.5단계에서 당기는
 
 superscalar: pipeline+명령어 병렬 실행
+
+2개의 정수 ALU 파이프라인, 2개의 소수 ALU 파이프라인, 1개의 메모리 파이프 라인 
+
+-stall이 발생하면 2배 이상의 안 좋은 영향을 받는다(특히 procedural dependency)
