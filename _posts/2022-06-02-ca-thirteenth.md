@@ -1,5 +1,5 @@
 ---
-title: "[CA] Module 4 - Lecture 13"
+title: "[CA] Module 5 - Lecture 13"
 excerpt: "컴퓨터 아키텍쳐 14주차"
 
 categories:
@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-06-12
+last_modified_at: 2022-06-13
 ---
 
 # 1. Superscalar Architecture
