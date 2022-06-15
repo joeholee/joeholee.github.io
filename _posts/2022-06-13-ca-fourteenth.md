@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-06-14
+last_modified_at: 2022-06-15
 ---
 
 # 1. Multithreading
@@ -34,3 +34,11 @@ last_modified_at: 2022-06-14
 - 8-way superscalar arcitecture에서 실제로 processor가 busy한 cycle은 평균적으로 20% 내외이므로 thread간 교차 실행으로 의미 있는 성능 향상을 기대할 수 있다.
   
 (3) multithreading cost
+
+multithreading을 위해서는 thread간의 dependancy를 없애기 위해 thread level의 program counter와 general purpose register가 필요하다.
+
+- 각각의 page table base register와 exception  handling register가 필요하다.
+- cache와 TLB의 capacity 향상이 필요하다.
+- thread 관리를 위한 OS의 overhead
+
+
