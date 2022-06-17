@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-06-15
+last_modified_at: 2022-06-17
 ---
 
 # 1. Multithreading
@@ -41,4 +41,6 @@ multithreading을 위해서는 thread간의 dependancy를 없애기 위해 threa
 - cache와 TLB의 capacity 향상이 필요하다.
 - thread 관리를 위한 OS의 overhead
 
+### 2. Granularity Multithreading
 
+(1) multi-thread 방법들
