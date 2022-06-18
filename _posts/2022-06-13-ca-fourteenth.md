@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-06-17
+last_modified_at: 2022-06-18
 ---
 
 # 1. Multithreading
@@ -44,3 +44,11 @@ multithreading을 위해서는 thread간의 dependancy를 없애기 위해 threa
 ### 2. Granularity Multithreading
 
 (1) multi-thread 방법들
+
+- Coarse-grained multithreading
+
+  - 매 100~1000 정도의 cycle마다 thread를 교차하여 실행하는 것
+
+ - memory access로 인해 많은 cycle이 낭비될 때 유용
+
+ - hardware support가 적다
