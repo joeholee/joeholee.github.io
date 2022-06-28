@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-06-18
+last_modified_at: 2022-06-28
 ---
 
 # 1. Multithreading
@@ -52,3 +52,21 @@ multithreading을 위해서는 thread간의 dependancy를 없애기 위해 threa
  - memory access로 인해 많은 cycle이 낭비될 때 유용
 
  - hardware support가 적다
+
+- Fine-grained multithreading
+
+ - 매 cycle마다 thread를 교차하는 것 (앞의 예제에서 사용한 방식)
+
+ - data hazard나 cache miss의 발생시 유용
+
+ - multi-issue arciectrure에서는 resource를 완벽히 활용하지 못함
+
+- simultaneous multithreading
+
+ - 하나의 cycle에서 여러 thread를 동시에 실행하는 것
+
+ - register renaming과 dynamic scheduling을 이용
+
+ - resource를 가장 최대로 활용
+
+ - 많은 hardware support가 필요
