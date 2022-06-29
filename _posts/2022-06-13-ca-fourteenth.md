@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-06-28
+last_modified_at: 2022-06-29
 ---
 
 # 1. Multithreading
@@ -70,3 +70,5 @@ multithreading을 위해서는 thread간의 dependancy를 없애기 위해 threa
  - resource를 가장 최대로 활용
 
  - 많은 hardware support가 필요
+
+3. CMP: Chip Multiprocessing
