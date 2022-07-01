@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-06-29
+last_modified_at: 2022-07-01
 ---
 
 # 1. Multithreading
@@ -72,3 +72,15 @@ multithreading을 위해서는 thread간의 dependancy를 없애기 위해 threa
  - 많은 hardware support가 필요
 
 3. CMP: Chip Multiprocessing
+
+- 색칠된 부분에서 issue가 일어나지 않음
+- 모든 issue width에서 issue가 일어나지 않는 completely idle cycle을 vertical waste라고 한다.
+- 일부 issue가 일어나지 않는 partially filled cycle을 horizontal waste라고 한다.
+
+- vertical multithreading
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c9d1fab-caf5-4717-b98d-7eaab8a1f70b/Untitled.png)
+
+- cycle by cycle로 thread interleave
+
+- vertical waste를 없애지만 horizontal waste는 남아있다.
