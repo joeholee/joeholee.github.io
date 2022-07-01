@@ -79,8 +79,6 @@ multithreading을 위해서는 thread간의 dependancy를 없애기 위해 threa
 
 - vertical multithreading
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c9d1fab-caf5-4717-b98d-7eaab8a1f70b/Untitled.png)
-
 - cycle by cycle로 thread interleave
 
 - vertical waste를 없애지만 horizontal waste는 남아있다.
