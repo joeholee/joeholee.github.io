@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-07-01
+last_modified_at: 2022-07-03
 ---
 
 # 1. Multithreading
@@ -82,3 +82,11 @@ multithreading을 위해서는 thread간의 dependancy를 없애기 위해 threa
 - cycle by cycle로 thread interleave
 
 - vertical waste를 없애지만 horizontal waste는 남아있다.
+
+Chip multiprocessing (CMP)
+
+- issue width를 각 thread 별로 분리
+
+- horizontal waste를 줄일 수 있지만 vertical waste들이 일부 남아있다.
+
+- 각 thread의 최대 처리량의 상한선을 제한한다.
