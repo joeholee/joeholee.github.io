@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-13
-last_modified_at: 2022-07-03
+last_modified_at: 2022-07-06
 ---
 
 # 1. Multithreading
@@ -90,3 +90,17 @@ Chip multiprocessing (CMP)
 - horizontal waste를 줄일 수 있지만 vertical waste들이 일부 남아있다.
 
 - 각 thread의 최대 처리량의 상한선을 제한한다.
+
+이상적인 superscalar multithreading
+
+- 제한 없이 multiple thread의 multiple issue가 교차
+
+Out of order simultaneous multithreading
+
+- multiple context switch와 fetch를 위한 engine 필요
+
+- OoO superscalar processor issue queue를 이용
+
+- 서킷에 multiple thread schedule이 요구된다
+
+- maximize utilization
