@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-06-13
+last_modified_at: 2022-07-08
 ---
 
 # 1. Superscalar Architecture
@@ -33,3 +33,25 @@ superscalar: pipeline+명령어 병렬 실행
 2개의 정수 ALU 파이프라인, 2개의 소수 ALU 파이프라인, 1개의 메모리 파이프 라인 
 
 -stall이 발생하면 2배 이상의 안 좋은 영향을 받는다(특히 procedural dependency)
+
+dependency에 의한 stall이 없어야 superscalar의 degree가 깊어질 수 있다. 더 효율적으로 실행될 수 있다
+
+## Out-of-order Completion
+
+inorder issue, OoO executione, completion을 수퍼스칼라에서 어떻게 지원하는가
+
+-issue order(Order in which instructions are fetched)
+
+-execution order(Order in which instructions are executed)
+
+-completion order(Order in which instructions update registers and memory values)
+
+가정
+
+I1 requires 2 cycles to execute(실행에 2 사이클 필요)
+
+I3 & I4 conflict for the same functional unit(excute 병렬 불가)
+
+I5 depends upon value produced by I4
+
+I5 & I6 conflict for a functional unit(excute 병렬 불가)
