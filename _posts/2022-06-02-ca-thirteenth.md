@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-07-08
+last_modified_at: 2022-07-09
 ---
 
 # 1. Superscalar Architecture
@@ -55,3 +55,9 @@ I3 & I4 conflict for the same functional unit(excute 병렬 불가)
 I5 depends upon value produced by I4
 
 I5 & I6 conflict for a functional unit(excute 병렬 불가)
+
+In-Order Issue / In-Order Completion: 8사이클
+
+In-Order Issue / Out-of-Order Completion: 7사이클
+
+Out-of-Order Completion일 때 한 사이클이 준다
