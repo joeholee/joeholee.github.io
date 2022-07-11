@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-07-09
+last_modified_at: 2022-07-11
 ---
 
 # 1. Superscalar Architecture
@@ -61,3 +61,8 @@ In-Order Issue / In-Order Completion: 8사이클
 In-Order Issue / Out-of-Order Completion: 7사이클
 
 Out-of-Order Completion일 때 한 사이클이 준다
+
+## Register Renaming
+
+output and anti dependencies는 register renaming으로 해결할 수 있다.
+
