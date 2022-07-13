@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-07-11
+last_modified_at: 2022-07-13
 ---
 
 # 1. Superscalar Architecture
@@ -66,3 +66,10 @@ Out-of-Order Completion일 때 한 사이클이 준다
 
 output and anti dependencies는 register renaming으로 해결할 수 있다.
 
+펑셔널 유닛은 renaming이 없으면 늘리는게 별 소용이 없다. 리네이밍을 하니까 효과가 4배 이상 나더라. 보통 8~32개로 늘린다
+
+## Branch Prediction
+
+Delayed branch slot-여러 명령어가 안에서 실행되는게 복구가 너무 복잡해서  잘 안함
+
+Branch prediction should be used-Branch history is very useful
