@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-07-13
+last_modified_at: 2022-07-15
 ---
 
 # 1. Superscalar Architecture
@@ -73,3 +73,35 @@ output and anti dependencies는 register renaming으로 해결할 수 있다.
 Delayed branch slot-여러 명령어가 안에서 실행되는게 복구가 너무 복잡해서  잘 안함
 
 Branch prediction should be used-Branch history is very useful
+
+또 다른 superscalar
+
+결과(commit)는 순서대로 처리되어야하고, branch prediction이 틀렸을 경우도 처리해야하기 때문에 마지막에 temporary storage가 필요하다.
+
+Results need to be put into order (commit or retire)
+
+- Results sometimes must be held in temporary storage until it is certain they can be placed in “permanent” storage.
+    - either committed or retired/flushed
+- Temporary storage requires regular clean up – overhead – done in hardware.
+
+**하드웨어의 서포트 필요**
+
+-Facilities to simultaneously fetch multiple instructions
+
+ 여러개 명령어 동시 패치
+
+-Logic to determine true dependencies involving register values and Mechanisms to communicate these values
+
+ 의존성 확인
+
+-Mechanisms to initiate multiple instructions in parallel
+
+ 병렬적으로 여러 명령어 초기화를 위한 매카니즘?
+
+-Resources for parallel execution of multiple instructions
+
+여러 명령어 실행을 위한 리소스(특히 functional unit)필요
+
+-Mechanisms for committing process state in correct order
+
+순서대로 끝나기 위한 매카니즘
