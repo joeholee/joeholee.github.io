@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-07-15
+last_modified_at: 2022-07-18
 ---
 
 # 1. Superscalar Architecture
@@ -105,3 +105,23 @@ Results need to be put into order (commit or retire)
 -Mechanisms for committing process state in correct order
 
 순서대로 끝나기 위한 매카니즘
+
+# Vector Processors
+
+## Flynn’s Taxonomy(멀티 프로세서의 분류 방법)
+
+-SISD(single instruction on single data): Mips, 인텔 펜티움
+
+-**SIMD**(single instruction on multiple data): vector processer
+
+-MISD(multiple instruction on single data): 지금은 없음
+
+-MIMD(multiple instruction on multiple data): Multicore, multithreaded processors
+
+## SIMD/Vector Processors
+
+간단 요약
+
+장점: 동일한 명령어로 여러 데이터를 처리해서 비용이 준다. 프로그램 메모리 자체를 줄일 수 있다(가능만 하면) 메모리 데이터를 멀티플한걸 하나에 처리해서 메모리 접근에서 좋다. 특히 포문
+
+단점: 스위치 문에서 약하다
