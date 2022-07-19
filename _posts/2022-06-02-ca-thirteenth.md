@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-06-02
-last_modified_at: 2022-07-18
+last_modified_at: 2022-07-19
 ---
 
 # 1. Superscalar Architecture
@@ -125,3 +125,17 @@ Results need to be put into order (commit or retire)
 장점: 동일한 명령어로 여러 데이터를 처리해서 비용이 준다. 프로그램 메모리 자체를 줄일 수 있다(가능만 하면) 메모리 데이터를 멀티플한걸 하나에 처리해서 메모리 접근에서 좋다. 특히 포문
 
 단점: 스위치 문에서 약하다
+
+vector processor
+
+vector레지스터(array)를 읽어서 operation을 multiple하게 하고 vector 레지스터(array)에 저장
+
+루프의 한 실행이 다른 것과 의존성이 없을 때 vectorizable하다고 한다(vector processor에 유리한)
+
+vector register 필요 
+
+vector stride register 필요(저장 위치가 다양하면 원하는 모양으로 바꿔줌)
+
+vector length를 파악하고 저장하는 vector length register
+
+vector length 길이를 맞추는 기술 strip-mining
