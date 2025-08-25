@@ -3,7 +3,7 @@ description: "Record everything"
 url: "https://joeholee.github.io"
 baseurl: "" # github.io 블로그는 보통 빈 값
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 
 # 기본 설정
 author:
